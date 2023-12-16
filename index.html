@@ -74,6 +74,12 @@
         }
       }
     </style>
+    <script>
+      const userLanguage = navigator.language || navigator.userLanguage;
+      if (userLanguage !== 'de-DE') {
+        window.location.href = 'english.html';
+      }
+    </script>
   </head>
   <body>
     <link rel="stylesheet" href="./style.css" />
